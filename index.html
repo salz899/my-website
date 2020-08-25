@@ -22,38 +22,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta name= "Description" content= "Front-End Developer">
     
-    <script>
-// Measures product impressions and also tracks a standard
-// pageview for the tag configuration.
-// Product impressions are sent by pushing an impressions object
-// containing one or more impressionFieldObjects.
-dataLayer.push({
-  'ecommerce': {
-    'currencyCode': 'EUR',                       // Local currency is optional.
-    'impressions': [
-     {
-       'name': 'Triblend Android T-Shirt',       // Name or ID is required.
-       'id': '12345',
-       'price': '15.25',
-       'brand': 'Google',
-       'category': 'Apparel',
-       'variant': 'Gray',
-       'list': 'Search Results',
-       'position': 1
-     },
-     {
-       'name': 'Donut Friday Scented T-Shirt',
-       'id': '67890',
-       'price': '33.75',
-       'brand': 'Google',
-       'category': 'Apparel',
-       'variant': 'Black',
-       'list': 'Search Results',
-       'position': 2
-     }]
-  }
-});
-</script>
+
 </head>
 
 <body>
@@ -344,7 +313,7 @@ dataLayer.push({
         
             <h3 class="sub-title">Please email me at <strong><a href="mailto:nickbsalz@gmail.com"> nickbsalz@gmail.com</a></strong> for a copy of my resume.</h3>
 
-            <button>
+            <button onclick="completeDonationDetails();">
                 <a href="mailto:nickbsalz@gmail.com">
                     <h4>Email me!</h4>
                 </a>
@@ -392,7 +361,16 @@ dataLayer.push({
             </div>
         </div>
 </body>
+<script>
+function completeDontaionDetails() {
+    dataLayer.push({
+        'event': 'donationDetailsComplete',
+        }
+        )
+    } 
+}
 
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
