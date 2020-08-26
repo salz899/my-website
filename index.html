@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="styles.css">
     <meta name= "Description" content= "Front-End Developer">
     
+    <script>
+    dataLayer = [{'pageCategory' : 'Homepage'}];
+    
+    function addInfo () {
+        dataLayer.push({'ButtonClick' : 'Completed'} }
+    </script>
 
 </head>
 
@@ -313,7 +319,7 @@
         
             <h3 class="sub-title">Please email me at <strong><a href="mailto:nickbsalz@gmail.com"> nickbsalz@gmail.com</a></strong> for a copy of my resume.</h3>
 
-            <button onclick="completeDonationDetails();">
+            <button onclick="addInfo()">
                 <a href="mailto:nickbsalz@gmail.com">
                     <h4>Email me!</h4>
                 </a>
@@ -361,16 +367,7 @@
             </div>
         </div>
 </body>
-<script>
-function completeDontaionDetails() {
-    dataLayer.push({
-        'event': 'donationDetailsComplete',
-        }
-        )
-    } 
-}
 
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
